@@ -1,5 +1,5 @@
 	<?php
-		include "login.php";
+		include "details.php";
 					// Create connection
 					
 					$con=mysqli_connect($host,$logname,$pass, $db);

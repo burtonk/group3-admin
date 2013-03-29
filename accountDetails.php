@@ -44,7 +44,7 @@
 		
 		<h2>Customer Account Details </h2>
 					<?php
-					include "login.php";
+					include "details.php";
 					// Create connection
 					
 					$con=mysqli_connect($host,$logname,$pass, $db);
