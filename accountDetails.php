@@ -5,6 +5,8 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 
+	
+	
 	<body>
 		<div id="header-wrapper">
 			<div id="header">
@@ -42,8 +44,10 @@
 		
 		<h2>Customer Account Details </h2>
 					<?php
-					// Create connection			
-					$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
+					include "login.php";
+					// Create connection
+					
+					$con=mysqli_connect($host,$logname,$pass, $db);
 					// Check connection
 						if (mysqli_connect_errno($con))
 						{
