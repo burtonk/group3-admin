@@ -55,6 +55,7 @@
 							echo "<table border='1'>
 							<tr>
 							<th>Email</th>
+							<th>Order I.D</th>							
 							<th>Product items</th>
 							<th>Total Price</th>
 							<th>Date</th>
@@ -64,6 +65,7 @@
 							  {
 							  echo "<tr>";
 							  echo "<td>" . $row['Email'] . "</td>";
+							  echo "<td>" . $row['Order_Id'] . "</td>";							  
 							  echo "<td>" . $row['Product_items'] . "</td>";
 							  echo "<td>" . $row['Total_Price'] . "</td>";
 							  echo "<td>" . $row['Date1'] . "</td>";
@@ -74,7 +76,14 @@
 
 							mysqli_close($con);
 							?>
-
+							<br>
+							<br>
+							<br>
+							<form action="emailCustomer.php" method="post">
+								Customer to email: <input type="text" name="Email">
+								Progress: <input type="text" name="Progress">
+								<input type="submit" value="Send email">
+							</form>
 		</div>
 	</div>
 
