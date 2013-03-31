@@ -71,7 +71,9 @@
 							  echo "<td>" . $row['Weight'] . "</td>";
 							  echo "<td>" . $row['Stock_Level'] . "</td>";
 							  echo "<td>" . $row['Min_Level'] . "</td>";
-
+							  echo "<td>	<form action="updateProduct.php" method="post">
+											New Level: <input type="text" name="Stock_Level"></li>
+											<input type="submit" value="Save"></td>"
 							  echo "</tr>";
 							  }
 							echo "</table>";
