@@ -21,7 +21,7 @@
 						{
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
-							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress <4");
+							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress !=4");
 
 							echo "<table border='1'>
 							<tr>
@@ -55,9 +55,11 @@
 								  
 								  FROM HERE!!!!*/
 							  			  
-							  $progressStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$row['Progress']");
-							  
-							  echo "<td>" . $progressStatus['Name'] . "</td>";
+										  
+									  
+							  $progStatus = mysqli_query($con,"SELECT Name FROM progress_options WHERE Progress_Id=$row['Progress']");
+							  /*
+							  echo "<td>" . $progStatus['Name'] . "</td>";
 							  
 							  /*echo "<td>" . $row['Progress'] . "</td>";
 							  /*echo "<td><button type = 'button'>Update</button></td>"*/
