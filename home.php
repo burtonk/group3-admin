@@ -87,7 +87,7 @@
 			<div style="padding-top:10px;padding-left:100px;float:middle">
 
 					<?php
-					include '../config/details.php';
+					include '/config/details.php';
 					// Create connection
 					
 					$con=mysqli_connect($host,$logname,$pass, $db);
