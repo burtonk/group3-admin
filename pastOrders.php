@@ -42,7 +42,7 @@
 			
 			
 			<?php
-					include "details.php";
+					include "/root/config/details.php";
 					// Create connection
 					
 					$con=mysqli_connect($host,$logname,$pass, $db);
