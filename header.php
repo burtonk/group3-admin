@@ -7,8 +7,8 @@
 	<body>
 		<div id="header-wrapper">
 			<div id="header">
-				<h1> Gradinata Admin Page </h1>
+				<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>
 			</div>	
-		</div>
+	</div>
 	<body>
 </html>
