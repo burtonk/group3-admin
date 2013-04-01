@@ -47,24 +47,14 @@
 							  echo "<td>" . $row['Date1'] . "</td>";
 							  
 							  
-							  /*change to text: *
-							  $result = mysqli_query($con,"SELECT * FROM Persons
-								WHERE FirstName='Peter'");
-
-								while($row = mysqli_fetch_array($result))
-								  {
-								  echo $row['FirstName'] . " " . $row['LastName'];
-								  echo "<br>";
-								  }*
-								  
-								  FROM HERE!!!!*/
+							  /* FROM HERE!!!!*/
 							  			  
 										  
 							
-							  /*
-							  echo "<td>" . $progStatus['Name'] . "</td>";
-							  */
-							  echo "<td>" . $row['Progress'] . "</td>";
+							  
+							  echo "<td>start cell" . $progStatus['Name'] . " end cell</td>";
+							  
+							  /*echo "<td>" . $row['Progress'] . "</td>";
 							  /*echo "<td><button type = 'button'>Update</button></td>"*/
 							  echo "</tr>";
 							  }
