@@ -51,10 +51,9 @@
 							  			  
 										  
 							
-							  
+							  $text = $progStatus['Name']
 							  echo "<td>start cell";
-							 echo $progStatus;
-							 echo $progStatus['Name'];
+							 echo "<br>" .$text;
 							 echo " end cell</td>";
 							  
 							  /*/echo "<td>" . $row['Progress'] . "</td>";
