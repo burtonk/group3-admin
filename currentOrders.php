@@ -41,8 +41,8 @@
 					  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 					  $progress= mysqli_fetch_array($progTable);
 
-					 /*product item fixer*
-					$order = $row['OrderID'];						 
+					 /*product item fixer*/
+					$order = $row['OrderID'];/*
 					$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		*/
 					
 
