@@ -51,6 +51,10 @@
 					  echo "<td>" . $row['OrderID'] . "</td>";							  
 					  
 					  echo "<td>";
+					  echo $items['Name_of_Product'];
+					  echo "</td>";
+					  
+					  
 					  /*while ($getItems = mysqli_fetch_array($items)){
 						echo "item" . $getItems['Name'] . " ";
 						}*/
@@ -58,7 +62,6 @@
 					  
 					  echo "<td>" . $row['Total_Price'] . "</td>";
 					  echo "<td>" . $row['Date1'] . "</td>";					  
-					  
 					 echo "<td>". $progress['Name'] . "</td>";
 					  
 					  /*/echo "<td>" . $row['Progress'] . "</td>";
