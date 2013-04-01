@@ -53,6 +53,7 @@
 							
 							  
 							  echo "<td>start cell";
+							 echo $progStatus;
 							 echo $progStatus['Name'];
 							 echo " end cell</td>";
 							  
