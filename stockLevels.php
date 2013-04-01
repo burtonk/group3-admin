@@ -43,9 +43,9 @@
 					  echo "<td>" . $row['Stock_Level'] . "</td>";
 					  echo "<td>" . $row['Min_Level'] . "</td>";
 					  
-					 /* echo "<td> <form action='updateStock.php' method='post'>
+					  echo "<td> <form action='updateStock.php' method='post'>
 									New Level: <input type='text' name='Stock_Level'>
-									<input type='submit' value='Save'></td>"*/
+									<input type='submit' value='Save'></form></td>"
 					  echo "</tr>";
 					}
 					echo "</table>";
