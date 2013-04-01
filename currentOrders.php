@@ -48,9 +48,7 @@
 							 /*product item fixer*/
 							$order = $row['OrderID'];						 
 							$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		
-							while ($getItems = mysqli_fetch_array($items)){
-								
-							}
+							
 
 							  echo "<tr>";
 							  echo "<td>" . $row['Email'] . "</td>";
@@ -58,7 +56,7 @@
 							  
 							  echo "<td>";
 							  while ($getItems = mysqli_fetch_array($items)){
-								echo $getItems['Name'] . ' ';
+								echo "item" . $getItems['Name'] . " ";
 								}
 							  echo "</td>";
 							  
