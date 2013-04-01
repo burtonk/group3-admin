@@ -17,7 +17,6 @@
 			<div style="padding-top:10px;padding-left:100px;float:middle">
 
 					<?php
-					//include "root/config/details.php";
 					// Create connection
 					
 					$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
@@ -70,7 +69,7 @@
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
 							$result = mysqli_query($con,"SELECT * FROM product
-							WHERE Stock_Level < 100");
+							WHERE Stock_Level <= Min_Level");
 							echo "<table border='1'>
 							<tr>
 							<th>Product</th>
