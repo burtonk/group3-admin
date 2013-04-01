@@ -47,8 +47,8 @@
 					  echo "<td>"	/*<form action='updateProduct.php' method='post'>
 									New Level: <input type='text' name='Stock_Level'></li>
 									<input type='submit' value='Save'>"</td>"
-					  */echo "</tr>";
-					}
+					  echo "</tr>";
+					}*/
 					echo "</table>";
 				
 					mysqli_close($con);
