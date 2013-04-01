@@ -58,7 +58,7 @@
 										  
 							$prog =   $row['Progress'];
 							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
-							  
+							  /*
 							  echo "<td>" . $progStatus['Name'] . "</td>";
 							  
 							  /*echo "<td>" . $row['Progress'] . "</td>";
