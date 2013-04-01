@@ -42,8 +42,8 @@
 					  $progress= mysqli_fetch_array($progTable);
 
 					 /*product item fixer*/
-					$order = $row['OrderID'];/*
-					$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		*/
+					$order = $row['OrderID'];
+					$itemTable = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		
 					
 
 					  echo "<tr>";
