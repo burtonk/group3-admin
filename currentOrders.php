@@ -39,10 +39,10 @@
 							  $prog =   $row['Progress'];
 							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
 							 if ($progStatus = NULL){
-							 echo "$progStatus = NULL";
+							 echo "progStatus = NULL";
 							 }
 							 else{
-							 echo "$progStatus != NULL";
+							 echo "progStatus != NULL";
 							 }
 
 							 
