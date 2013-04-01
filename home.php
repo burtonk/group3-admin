@@ -47,10 +47,10 @@
 			<div style="padding-top:10px;padding-left:100px;float:middle">
 
 					<?php
-					include "root/config/details.php";
+					//include "root/config/details.php";
 					// Create connection
 					
-					$con=mysqli_connect($host,$logname,$pass, $db);
+					$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 					// Check connection
 						if (mysqli_connect_errno($con))
 						{

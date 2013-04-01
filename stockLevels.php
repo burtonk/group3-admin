@@ -41,10 +41,10 @@
 			<h2>Stock levels</h2>
 			
 				<?php
-					include "/root/config/details.php";
+					
 					// Create connection
 					
-					$con=mysqli_connect($host,$logname,$pass, $db);
+					$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 					// Check connection
 						if (mysqli_connect_errno($con))
 						{
