@@ -35,6 +35,10 @@
 							</tr>";
 							while($row = mysqli_fetch_array($result))
 							  {
+							  
+							  $prog =   $row['Progress'];
+							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
+							  
 							  echo "<tr>";
 							  echo "<td>" . $row['Email'] . "</td>";
 							  echo "<td>" . $row['Order_Id'] . "</td>";							  
@@ -56,12 +60,11 @@
 								  FROM HERE!!!!*/
 							  			  
 										  
-							$prog =   $row['Progress'];
-							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
+							
 							  /*
 							  echo "<td>" . $progStatus['Name'] . "</td>";
-							  
-							  /*echo "<td>" . $row['Progress'] . "</td>";
+							  */
+							  echo "<td>" . $row['Progress'] . "</td>";
 							  /*echo "<td><button type = 'button'>Update</button></td>"*/
 							  echo "</tr>";
 							  }
