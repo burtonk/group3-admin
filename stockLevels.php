@@ -22,9 +22,18 @@
 					  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 					}
 					
-					else {
-						echo "connected to db";
-					}
+					$result = mysqli_query($con,"SELECT * FROM product");
+					
+					echo "<table border='1'>
+							<tr>
+							<th>Name</th>
+							<th>Product I.D</th>
+							<th>Price</th>
+							<th>Weight</th>
+							<th>Stock Level</th>
+							<th>Minimum Level</th>
+
+							</tr>";
 					
 					mysqli_close($con);
 			?>	
