@@ -48,10 +48,8 @@
 									<input type='submit' value='Save'></td>"
 					  echo "</tr>";
 					}
-							echo "</table>";
-
-							mysqli_close($con);
-					
+					echo "</table>";
+				
 					mysqli_close($con);
 			?>	
 	
