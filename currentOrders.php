@@ -47,10 +47,9 @@
 
 							 
 							  echo "<tr>";
-							  echo "<td>" . $row['Product_items'] . "</td>";
 							  echo "<td>" . $row['Email'] . "</td>";
-							  echo "<td>" . $row['Order_Id'] . "</td>";							  
-							  
+							  echo "<td>" . $row['OrderID'] . "</td>";							  
+							  echo "<td>" . $row['Product_items'] . "</td>";
 							  echo "<td>" . $row['Total_Price'] . "</td>";
 							  echo "<td>" . $row['Date1'] . "</td>";
 							  
