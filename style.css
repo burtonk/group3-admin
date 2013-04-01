@@ -101,10 +101,11 @@ background-color: #43AE7C;
 }
 
 #content-wrapper{
-
+width: 100%;
 }
 
 #content {
+width: 100%;
 	margin-left: 16em;
 	margin-top: 12em;
 	padding: 2em 4em;
