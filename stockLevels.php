@@ -35,7 +35,7 @@
 
 							</tr>";
 					
-					while($row = mysqli_fetch_array($result)) {
+					/*while($row = mysqli_fetch_array($result)) {
 					  echo "<tr>";
 					  echo "<td>" . $row['Name'] . "</td>";
 					  echo "<td>" . $row['P_Id'] . "</td>";
@@ -45,9 +45,9 @@
 					  echo "<td>" . $row['Min_Level'] . "</td>";
 					  echo "<td>"	/*<form action='updateProduct.php' method='post'>
 									New Level: <input type='text' name='Stock_Level'></li>
-									<input type='submit' value='Save'>*/"</td>"
+									<input type='submit' value='Save'>"</td>"
 					  echo "</tr>";
-					}
+					}*/
 					echo "</table>";
 				
 					mysqli_close($con);
