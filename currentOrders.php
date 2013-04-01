@@ -59,9 +59,7 @@
 					  echo "<td>" . $row['Total_Price'] . "</td>";
 					  echo "<td>" . $row['Date1'] . "</td>";					  
 					  
-					 echo "<td>start cell";
-					 echo "<br> progress is " . $progress['Name'] . "<br>";
-					 echo " end cell</td>";
+					 echo "<td>". $progress['Name'] . "</td>";
 					  
 					  /*/echo "<td>" . $row['Progress'] . "</td>";
 					  /*echo "<td><button type = 'button'>Update</button></td>"*/
