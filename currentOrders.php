@@ -53,11 +53,11 @@
 								  echo "<br>";
 								  }*
 								  
-								  FROM HERE!!!!
+								  FROM HERE!!!!*/
 							  
 							  
 							  echo "<td>";
-							  $progressStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$row['Progress']")
+							  $progressStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$row['Progress']");
 							  echo $progressStatus['Name'] . "</td>";
 							  
 							  /*echo "<td>" . $row['Progress'] . "</td>";
