@@ -31,7 +31,7 @@
 							<th>Weight</th>
 							<th>Stock Level</th>
 							<th>Minimum Level</th>
-
+							<th>Update Level</th>
 							</tr>";
 					
 					while($row = mysqli_fetch_array($result)) {

@@ -21,7 +21,7 @@
 						{
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
-							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress !=4");
+							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress <4");
 
 							echo "<table border='1'>
 							<tr>
@@ -31,6 +31,7 @@
 							<th>Total Price</th>
 							<th>Date</th>
 							<th>Progress</th>
+							<th>Update</th>
 							</tr>";
 							while($row = mysqli_fetch_array($result))
 							  {
@@ -40,7 +41,25 @@
 							  echo "<td>" . $row['Product_items'] . "</td>";
 							  echo "<td>" . $row['Total_Price'] . "</td>";
 							  echo "<td>" . $row['Date1'] . "</td>";
-							  echo "<td>" . $row['Progress'] . "</td>";
+							  
+							  
+							  /*change to text: *
+							  $result = mysqli_query($con,"SELECT * FROM Persons
+								WHERE FirstName='Peter'");
+
+								while($row = mysqli_fetch_array($result))
+								  {
+								  echo $row['FirstName'] . " " . $row['LastName'];
+								  echo "<br>";
+								  }*/
+							  
+							  
+							  echo "<td>";
+							  $progressStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$row['Progress']")
+							  echo $progressStatus['Name'] . "</td>";
+							  
+							  /*echo "<td>" . $row['Progress'] . "</td>";
+							  /*echo "<td><button type = 'button'>Update</button></td>"*/
 							  echo "</tr>";
 							  }
 							echo "</table>";
