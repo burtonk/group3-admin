@@ -6,6 +6,7 @@
 	</head>
 
 	<body>
+	<?php include 'header.php'; include 'sidebar.php' ?>
 	<p> Hellooo?</P>
 	</body>
 
