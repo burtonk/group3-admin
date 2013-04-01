@@ -52,9 +52,11 @@
 										  
 							
 							  
-							  echo "<td>start cell" . $progStatus['Name'] . " end cell</td>";
+							  echo "<td>start cell";
+							 echo $progStatus['Name']
+							 echo " end cell</td>";
 							  
-							  /*echo "<td>" . $row['Progress'] . "</td>";
+							  /*/echo "<td>" . $row['Progress'] . "</td>";
 							  /*echo "<td><button type = 'button'>Update</button></td>"*/
 							  echo "</tr>";
 							  }
