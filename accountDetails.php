@@ -5,8 +5,6 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 
-	
-	
 	<body>
 		<div id="header-wrapper">
 			<div id="header">
@@ -64,7 +62,6 @@
 							<th>Phone</th>
 							<th>Client Status</th>
 							<th>Admin Status</th>
-							<th>Password</th>
 							<th>Date of Birth</th>
 
 
@@ -79,7 +76,6 @@
 							  echo "<td>" . $row['Phone'] . "</td>";
 							  echo "<td>" . $row['Client_status'] . "</td>";
 							  echo "<td>" . $row['Admin_status'] . "</td>";
-							  echo "<td>" . $row['Password'] . "</td>";
 							  echo "<td>" . $row['DOB'] . "</td>";
 							  echo "</tr>";
 							  }
