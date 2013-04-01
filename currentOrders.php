@@ -35,34 +35,26 @@
 					</tr>";
 					while($row = mysqli_fetch_array($result))
 					  {
-					  
-					  /*progress: no. -> text*/
-					  $progNo=$row['Progress'];
-					  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
-					  $progress= mysqli_fetch_array($progTable);
-
-					 /*get product names*/
-					$orderNo=$row['OrderID'];
-					$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
-					$items=mysqli_fetch_array($itemTable);
-
 					  echo "<tr>";
 					  echo "<td>" . $row['Email'] . "</td>";
-					  echo "<td>" . $row['OrderID'] . "</td>";							  
-					  
+					  echo "<td>" . $row['OrderID'] . "</td>";					 
+
+						/*get product names*/
+						$orderNo=$row['OrderID'];
+						$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
+						$items=mysqli_fetch_array($itemTable);					 
 					  echo "<td>". $items['Name_of_Product']."</td>";
-					  
-					  
-					  /*while ($getItems = mysqli_fetch_array($items)){
-						echo "item" . $getItems['Name'] . " ";
-						}*/
-					  echo "</td>";
-					  
+					  					  
 					  echo "<td>" . $row['Total_Price'] . "</td>";
 					  echo "<td>" . $row['Date1'] . "</td>";					  
-					 echo "<td>". $progress['Name'] . "</td>";
+					 
+						 /*progress: no. -> text*/
+						  $progNo=$row['Progress'];
+						  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
+						  $progress= mysqli_fetch_array($progTable);					 
+					  echo "<td>". $progress['Name'] . "</td>";
 					  
-					  /*/echo "<td>" . $row['Progress'] . "</td>";
+
 					  /*echo "<td><button type = 'button'>Update</button></td>"*/
 					  echo "</tr>";
 					  }
