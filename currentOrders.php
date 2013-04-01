@@ -53,11 +53,11 @@
 								  echo "<br>";
 								  }*
 								  
-								  FROM HERE!!!!*
+								  FROM HERE!!!!*/
 							  			  
 										  
-									  
-							  $progStatus = mysqli_query($con,"SELECT Name FROM progress_options WHERE Progress_Id=$row['Progress']");
+									$prog =   $row['Progress'];
+							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
 							  /*
 							  echo "<td>" . $progStatus['Name'] . "</td>";
 							  
@@ -72,11 +72,11 @@
 							<br>
 							<br>
 							<br>
-							<form action="emailCustomer.php" method="post">
+							<!--<form action="emailCustomer.php" method="post">
 								Customer to email: <input type="text" name="Email">
 								Progress: <input type="text" name="Progress">
 								<input type="submit" value="Send email">
-							</form>
+							</form>-->
 		</div>
 	</div>
 
