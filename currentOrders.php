@@ -36,18 +36,14 @@
 							while($row = mysqli_fetch_array($result))
 							  {
 							  
+							  /*progress: no. -> text*/
 							  $prog=$row['Progress'];
-							  $progStatus=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id='$prog'");
-							 if ($progStatus=NULL){
-								echo "progStatus = NULL";
-							 }
-							 else{
-								echo "progStatus != NULL";
-							 }
+							  $progStatus=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
+								$progress=$progStatus['Name'];
 
 							 /*product item fixer*/
 							$order = $row['OrderID'];						 
-							$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id='$order'");		
+							$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		
 							
 
 							  echo "<tr>";
@@ -70,7 +66,7 @@
 							
 							  
 							 echo "<td>start cell";
-							 echo "<br> progress is " . $progStatus['Name'] . "<br>";
+							 echo "<br> progress is " . $progress . "<br>";
 							 echo " end cell</td>";
 							  
 							  /*/echo "<td>" . $row['Progress'] . "</td>";
