@@ -38,7 +38,14 @@
 							  
 							  $prog =   $row['Progress'];
 							  $progStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
-							  
+							 if ($progStatus = NULL){
+							 echo "$progStatus = NULL";
+							 }
+							 else{
+							 echo "$progStatus != NULL";
+							 }
+
+							 
 							  echo "<tr>";
 							  echo "<td>" . $row['Email'] . "</td>";
 							  echo "<td>" . $row['Order_Id'] . "</td>";							  
@@ -51,9 +58,9 @@
 							  			  
 										  
 							
-							  $text = $progStatus['Name']
-							  echo "<td>start cell";
-							 echo "<br>" .$text;
+							  
+							 echo "<td>start cell";
+							 echo $progStatus['Name'];
 							 echo " end cell</td>";
 							  
 							  /*/echo "<td>" . $row['Progress'] . "</td>";
