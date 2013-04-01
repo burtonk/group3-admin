@@ -1,10 +1,10 @@
-<html>
+<!--<html>
 	<head>
 		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	
-	<body>
+	<body>-->
 		<div id="bar-wrapper">
 			<div id="bar">
 				<ul>
@@ -24,5 +24,5 @@
 					</li>
 				</ul>
 			</div>
-	</body>
-</html>
+	<!--</body>
+</html>-->
