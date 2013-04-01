@@ -60,7 +60,7 @@
 							
 							  
 							 echo "<td>start cell";
-							 echo $progStatus['Name'];
+							 echo "<br> progress is " . $progStatus['Name'] . "<br>";
 							 echo " end cell</td>";
 							  
 							  /*/echo "<td>" . $row['Progress'] . "</td>";
