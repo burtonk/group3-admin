@@ -51,19 +51,13 @@
 					  echo "<td>" . $row['OrderID'] . "</td>";							  
 					  
 					  echo "<td>";
-					  while ($getItems = mysqli_fetch_array($items)){
+					  /*while ($getItems = mysqli_fetch_array($items)){
 						echo "item" . $getItems['Name'] . " ";
-						}
+						}*/
 					  echo "</td>";
 					  
 					  echo "<td>" . $row['Total_Price'] . "</td>";
-					  echo "<td>" . $row['Date1'] . "</td>";
-					  
-					  
-					  /* FROM HERE!!!!*/
-								  
-								  
-					
+					  echo "<td>" . $row['Date1'] . "</td>";					  
 					  
 					 echo "<td>start cell";
 					 echo "<br> progress is " . $progress['Name'] . "<br>";
