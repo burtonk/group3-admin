@@ -54,11 +54,10 @@
 								  }*
 								  
 								  FROM HERE!!!!*/
-							  
-							  
-							  echo "<td>";
+							  			  
 							  $progressStatus = mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$row['Progress']");
-							  echo $progressStatus['Name'] . "</td>";
+							  
+							  echo "<td>" . $progressStatus['Name'] . "</td>";
 							  
 							  /*echo "<td>" . $row['Progress'] . "</td>";
 							  /*echo "<td><button type = 'button'>Update</button></td>"*/
