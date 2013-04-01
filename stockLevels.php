@@ -7,7 +7,13 @@
 
 	<body>
 	<?php include 'header.php'; include 'sidebar.php' ?>
-	<p> Hellooo?</P>
+	<div id="content-wrapper">
+		<div id="content">
+
+			<p> Hellooo?</P>
+	
+		</div>
+	</div>
 	</body>
 
 </html>
