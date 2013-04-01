@@ -37,7 +37,7 @@
 							  {
 							  
 							  $prog=$row['Progress'];
-							  $progStatus=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$prog");
+							  $progStatus=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id='$prog'");
 							 if ($progStatus=NULL){
 								echo "progStatus = NULL";
 							 }
@@ -47,7 +47,7 @@
 
 							 /*product item fixer*/
 							$order = $row['OrderID'];						 
-							$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		
+							$items = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id='$order'");		
 							
 
 							  echo "<tr>";
