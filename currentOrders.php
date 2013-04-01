@@ -41,11 +41,11 @@
 					  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 					  $progress= mysqli_fetch_array($progTable);
 
-					 /*product item fixer*/
+					 /*product item fixer*
 					
 					 $order=$row['OrderID'];/*
 					 $itemTable=mysqli_query($con,"SELECT * FROM order_item WHERE Order_Id=$order");	
-					$items = mysqli_fetch_array($itemTable);/*
+					$items = mysqli_fetch_array($itemTable);*/
 
 					  echo "<tr>";
 					  echo "<td>" . $row['Email'] . "</td>";
