@@ -43,8 +43,8 @@
 
 					 /*product item fixer*/
 					$order = $row['OrderID'];
-					$itemTable = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");		
-					
+					$itemTable = mysqli_query($con, "SELECT	* FROM order_item WHERE Order_Id=$order");
+					$items=mysqli_fetch_array($itemTable);
 
 					  echo "<tr>";
 					  echo "<td>" . $row['Email'] . "</td>";
