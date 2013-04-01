@@ -36,7 +36,9 @@
 							</tr>";
 					
 					while($row = mysqli_fetch_array($result)) {
-					  echo "<tr>";}/*
+					  echo "<tr>";
+					  echo "<td>" . $row['Name'] . "</td>";      
+					  }/*
 					  echo "<td>" . $row['Name'] . "</td>";
 					  echo "<td>" . $row['P_Id'] . "</td>";
 					  echo "<td>" . $row['Price'] . "</td>";
