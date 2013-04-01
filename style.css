@@ -70,7 +70,7 @@ background-color: #43AE7C;
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 12em;
+	height: 80px;
 	background: #000000;
 }
 
@@ -78,7 +78,7 @@ background-color: #43AE7C;
 	position: absolute;
 	left: 3em;
 	width: 100%;
-	height : 12em;
+	height : 80px;
 	background: #000000;
 }
 
@@ -86,7 +86,7 @@ background-color: #43AE7C;
 	position: absolute;
 	top: 12em;
 	left: 0;
-	width: 17em;
+	width: 90px;
 	height: 100%;
 	background: #85CD00;
 }
@@ -95,7 +95,7 @@ background-color: #43AE7C;
 	position: absolute;
 	top: 20px;
 	left: 0;
-	width: 17em;
+	width: 90px;
 	background: #85CD00;
 	padding-top: 1em;
 }
@@ -107,9 +107,9 @@ width: 100%;
 }
 
 #content {
-width: 100%;
-	margin-left: 19em;
-	margin-top: 4em;
+	width: 100%;
+	margin-left: 90px;
+	margin-top: 80px;
 	/*padding: 2em 4em;
 	/*background-color: #FF9F15;*/
 }
