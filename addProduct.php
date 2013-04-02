@@ -42,6 +42,7 @@
 			<form action="insertProduct.php" method="post">
 			<ul>
 			<li>Name: <input type="text" name="Name"></li>
+			<li>Product I.D: <input type="text" name="P_Id"></li>
 			<li>Price: <input type="text" name="Price"></li>
 			<li>Product Description: <input type="text" name="Description"></li>
 			<li>Picture: <input type="text" name="Img_location"></li>
