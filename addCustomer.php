@@ -23,7 +23,7 @@
 			<li>Password: <input type="text" name="Password"></li>
 			<li>Date of Birth: <input type="text" name="DOB"></li>
 			<br>
-			<input type="submit" value="Save">
+			<input type="submit" value="save">
 			</ul>
 			</form>
 		</div>
