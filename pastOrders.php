@@ -50,7 +50,7 @@
 						{
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
-							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress =4");
+							$result = mysqli_query($con,"SELECT * FROM the_order WHERE Progress >=4");
 
 							echo "<table border='1'>
 							<tr>
