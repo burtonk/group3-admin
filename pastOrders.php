@@ -40,7 +40,12 @@
 							  echo "<td>" . $row['Product_items'] . "</td>";
 							  echo "<td>" . $row['Total_Price'] . "</td>";
 							  echo "<td>" . $row['Date1'] . "</td>";
-							  echo "<td>" . $row['Progress'] . "</td>";
+							  
+							  $progNo=$row['Progress'];
+							$progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
+							$progress= mysqli_fetch_array($progTable);
+							
+							  echo "<td>" . $progress['Name'] . "</td>";
 							  echo "</tr>";
 							  }
 							echo "</table>";

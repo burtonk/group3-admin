@@ -21,9 +21,19 @@ h2{
 }
 
 table {
-	border: 1;
-	cellpadding: 4;
+	padding: 4;
+	background: #E0FF9E;
 	}
+	
+th {
+max-width: 250px;
+border-bottom: 5px solid #64BB95;
+}
+
+td {
+max-width: 250px;	
+border-bottom: 1px solid #64BB95;
+}
 
 th {
 max-width: 250px;
