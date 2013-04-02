@@ -31,8 +31,7 @@
 							<th>Delivery Address</th>
 							<th>Email</th>							
 							<th>Phone</th>
-							<th>Client Status</th>
-							<th>Admin Status</th>
+							<th>Client/Admin</th>
 							<th>Date of Birth</th>
 
 
@@ -45,7 +44,16 @@
 							  echo "<td>" . $row['Delivery_address'] . "</td>";
 							  echo "<td>" . $row['Email'] . "</td>";
 							  echo "<td>" . $row['Phone'] . "</td>";
-							  echo "<td>" . $row['Client_status'] . "</td>";
+							  
+							  echo "<td>" 							  
+							  if($row['Client_status'] ==1){
+								echo "client";
+							  }
+							  else{
+								echo "admin";
+							  }							  
+							  echo "</td>";
+							  
 							  echo "<td>" . $row['Admin_status'] . "</td>";
 							  echo "<td>" . $row['DOB'] . "</td>";
 							  echo "</tr>";
@@ -57,6 +65,7 @@
 							<br>
 							<br>
 							<button onclick="location.href='addCustomer.php'">Add Customer</button>
+							<button onclick="location.href='insertAdmin.php'">Add Admin</button>
 
 		</div>
 	</div>
