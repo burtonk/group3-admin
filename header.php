@@ -28,6 +28,6 @@
 	<div id="header">
 		<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>
 		
-		<button onclick="logout.php">log out</button>
+		<button action="a href='logout.php'">log out</button>
 	</div>	
 </div>
