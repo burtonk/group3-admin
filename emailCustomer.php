@@ -1,6 +1,6 @@
 <?php
 /*increase progress level of order (update Progress in original of row)*/
-$increase=$row['Progress']+1;
+$increase=$row['Progress']+1;/*
 mysqli_query($con, "UPDATE the_order SET Progress=$increase WHERE OrderID=$row['OrderID']");
 
 /*get new word - reset progress*
