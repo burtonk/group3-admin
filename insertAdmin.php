@@ -1,7 +1,7 @@
 <?php 
 // Connects to your Database 
 
-$db = mysql_connect("k.tfa.ie", "disney", "kandy", "website") or die(mysql_error()); 
+mysql_connect("k.tfa.ie", "disney", "kandy", "website") or die(mysql_error()); 
  mysql_select_db($db) or die(mysql_error()); 
 
 
