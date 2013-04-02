@@ -14,7 +14,7 @@
 
 		<?php 
 		// Connects to your Database 
-		mysql_connect("k.tfa.ie", "disney", "kandy") or die(mysql_error()); 
+		mysql_connect("k.tfa.ie", "disney", "kandy", "website") or die(mysql_error()); 
 		mysql_select_db($db) or die(mysql_error()); 
 
 		//This code runs if the form has been submitted
