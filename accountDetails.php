@@ -45,7 +45,7 @@
 							  echo "<td>" . $row['Email'] . "</td>";
 							  echo "<td>" . $row['Phone'] . "</td>";
 							  
-							  echo "<td>" 							  
+							  echo "<td>";
 							  if($row['Client_status'] ==1){
 								echo "client";
 							  }
