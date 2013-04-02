@@ -41,6 +41,9 @@
 				<a href="addProduct.php" class = "side"><li>Add product</li></a>
 				<a href="inactiveStock.php" class = "side"><li >Inactive stock</li></a>
 			</li>
+			
+			<li>Admin<ul>
+			<a href="insertAdmin.php" class = "side"><li>Add New Admin</li></a>
 		</ul>
 	</div>
 </div>
