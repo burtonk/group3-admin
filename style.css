@@ -21,18 +21,20 @@ h2{
 }
 
 table {
+	font: Verdana, Arial, Helvetica, sans-serif;
 	background: #E1F8FF;
 	border-collapse: collapse;
+	border-style: hidden;
 	}
 	
 th {
-padding: 0 1em;
+padding: .5 1em;
 max-width: 250px;
 border-bottom: 5px solid #097BB0;
 }
 
 td {
-padding: 0 1em;
+padding: .5 1em;
 max-width: 250px;	
 border-bottom: 1px solid #097BB0;
 }
