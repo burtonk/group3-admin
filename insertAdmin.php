@@ -33,12 +33,7 @@
 	  }
 	?>
 	
-	<?php include 'header.php'; include 'sidebar.php' ?>
 	
-	<div id="content-wrapper">
-		<div id="content">
-		
-
 		<?php 
 		// Connects to your Database 
 		$db=mysql_connect("k.tfa.ie", "disney", "kandy", "website") or die(mysql_error()); 
@@ -115,8 +110,7 @@
 		}
 		?> 
 		
-		</div>
-	</div>
+		
 
 </body>
 </html>
