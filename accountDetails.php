@@ -22,7 +22,7 @@
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
 
-							$result = mysqli_query($con,"SELECT * FROM the_user");
+							$result = mysqli_query($con,"SELECT * FROM the_user WHERE Client_status=1");
 
 							echo "<table border='1'>
 							<tr>
@@ -31,7 +31,6 @@
 							<th>Delivery Address</th>
 							<th>Email</th>							
 							<th>Phone</th>
-							<th>Client/Admin</th>
 							<th>Date of Birth</th>
 
 
@@ -44,17 +43,6 @@
 							  echo "<td>" . $row['Delivery_address'] . "</td>";
 							  echo "<td>" . $row['Email'] . "</td>";
 							  echo "<td>" . $row['Phone'] . "</td>";
-							  
-							  echo "<td>";
-							  if($row['Client_status'] ==1){
-								echo "client";
-							  }
-							  else{
-								echo "admin";
-							  }					
-							  echo "</td>";
-							  
-							  echo "<td>" . $row['Admin_status'] . "</td>";
 							  echo "<td>" . $row['DOB'] . "</td>";
 							  echo "</tr>";
 							  }
