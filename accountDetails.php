@@ -65,7 +65,7 @@
 							<br>
 							<br>
 							<button onclick="location.href='addCustomer.php'">Add Customer</button>
-							<!--<button onclick="location.href='insertAdmin.php'">Add Admin</button>*/-->
+							<button onclick="location.href='insertAdmin.php'">Add Admin</button>
 
 		</div>
 	</div>
