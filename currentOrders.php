@@ -81,7 +81,10 @@
 					  echo "<td>". $progress['Name'] . "</td>";
 					  
 
-					  echo "<td><form action='emailCustomer.php' method ='post'><input type = 'submit' value ='Update'></form></td>";
+					  echo "<td>
+					  <form action='emailCustomer.php' method ='post'><input type = 'submit' value ='Update'></form>
+					  <form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel order'></form>
+					  </td>";
 					  echo "</tr>";
 					  }
 					echo "</table>";

@@ -24,16 +24,15 @@
 	  }
 	?>
 
-<div id="header-wrapper">
-	<div id="header">
-		<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>
-		
-		
-		
-		<form action="logout.php" method="post">
-			<input name="return" type="hidden" value="<?php echo urlencode($_SERVER["PHP_SELF"]);?>" />
-			<input type="submit" value="log out" />
-		</form>
-	
-	</div>	
-</div>
+<?php
+/*increase progress level of order (update Progress in original of row)*/
+mysqli_query($con, "UPDATE the_order SET Progress=5 WHERE OrderID=$id");
+
+/*send email*/
+$to = $row['email'];
+$subject = "Current Order Tracking ";
+$message = "Dear Customer, Your order has been cancelled. We apologise for the inconvenience";
+$headers = "From: gradinata@gmail.com";
+mail($to,$subject,$message,$headers);
+echo "Mail Sent.";
+?>
