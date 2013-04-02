@@ -28,9 +28,9 @@
 							echo "<table border='1'>
 							<tr>
 							<th>Name</th>
-							<th>Product I.D</th>
+							<th>Product ID</th>
 							<th>Price</th>
-							<th>Product Description</th>
+							<th>Description</th>
 							<th>Picture</th>
 							<th>Weight</th>
 							<th>Native Name</th>
@@ -53,11 +53,11 @@
 							  echo "<td>" . $row['S_Name'] . "</td>";
 							  echo "<td>" . $row['Stock_Level'] . "</td>";
 							  echo "<td>" . $row['Min_Level'] . "</td>";
-							  echo "<td>" . $row['Active'] . "</td>";
+							  echo "<td>" . $row['Active'] . "</td>";/*
 							  echo "<td>
 								<form action='insertProduct.php' method='post'>
 								<input type='submit' value='Reinstate product'>
-								</form></td>"
+								</form></td>"*/
 							  echo "</tr>";
 							  }
 							echo "</table>";
