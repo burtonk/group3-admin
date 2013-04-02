@@ -1,17 +1,9 @@
 <?php
-/*change $row['Progress'] to new number (+1)
-
-$progressNum = $row['Progress']
-/*number -> word
-get Name where Progress_Id == $progressNum
-*
-
-$progress = $progressNum;*/
+/*also increase progress level, get new word*/
 $to = $row['email'];
 $subject = "Current Order Tracking ";
-$message = "Dear Customer, Your order is currently at the stage of " . 'Progress';
-$from = "gradinata@gmail.com";
-$headers = "From:" . $from;
+$message = "Dear Customer, Your order is currently at the stage of " . $progress['Name'];
+$headers = "From: gradinata@gmail.com";
 mail($to,$subject,$message,$headers);
 echo "Mail Sent.";
 ?>

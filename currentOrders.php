@@ -55,7 +55,7 @@
 					  echo "<td>". $progress['Name'] . "</td>";
 					  
 
-					  /*echo "<td><button type = 'button'>Update</button></td>"*/
+					  echo "<td><form action='emailCustomer.php' method ='post'><input type = 'submit' value ='Update'></form></td>";
 					  echo "</tr>";
 					  }
 					echo "</table>";
