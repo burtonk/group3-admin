@@ -37,11 +37,13 @@
 							  {
 							  echo "<tr>";
 							  echo "<td>" . $row['Email'] . "</td>";
-							  $orderNo=$row['OrderID'];
-						$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
-						$items=mysqli_fetch_array($itemTable);					 
-					  echo "<td>". $items['Name_of_Product']."</td>";
-							  echo "<td>" . $row['Total_Price'] . "</td>";
+							
+							$orderNo=$row['OrderID'];
+							$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
+							$items=mysqli_fetch_array($itemTable);					 
+							echo "<td>". $items['Name_of_Product']."</td>";
+
+							echo "<td>" . $row['Total_Price'] . "</td>";
 							  echo "<td>" . $row['Date1'] . "</td>";
 							  
 							  $progNo=$row['Progress'];
