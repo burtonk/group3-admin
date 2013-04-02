@@ -26,7 +26,11 @@
 
 <?php
 /*increase progress level of order (update Progress in original of row)*/
-mysqli_query($con, "UPDATE the_order SET Progress=5 WHERE OrderID=$id");
+$sql=mysqli_query($con, "UPDATE the_order SET Progress=5 WHERE OrderID=$id");
+	if (!mysqli_query($con,$sql))		
+	{
+	die('Error: ' . mysqli_error());
+	}
 
 /*send email*/
 $to = $row['email'];
