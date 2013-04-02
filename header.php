@@ -27,7 +27,8 @@
 <div id="header-wrapper">
 	<div id="header">
 		<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>
-		
-		<button action="a href='logout.php'">log out</button>
+		<form>
+		<input type ="button" value="log out" onClick="a href='logout.php'">log out</form>
+		</form>
 	</div>	
 </div>
