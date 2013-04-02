@@ -22,13 +22,11 @@
 	 else {
 		header("Location: login.php");
 	  }
-	?>
 
-<?php
 	
-	// Create connection
-	
+	// Create connection	
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
+	
 	// Check connection
 		if (mysqli_connect_errno($con))
 		{
@@ -43,9 +41,8 @@ VALUES
 	{
 	die('Error: ' . mysqli_error());
 	}	
-	else{
 	echo "1 record added";
-	}
+	
 
 	mysqli_close($con);
 ?>
