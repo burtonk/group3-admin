@@ -46,12 +46,12 @@
 							  echo "<td>" . $row['Phone'] . "</td>";
 							  
 							  echo "<td>" 							  
-							  if($row['Client_status'] ==1){
+							  /*if($row['Client_status'] ==1){
 								echo "client";
 							  }
 							  else{
 								echo "admin";
-							  }							  
+							  }					*/		  
 							  echo "</td>";
 							  
 							  echo "<td>" . $row['Admin_status'] . "</td>";
