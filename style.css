@@ -21,20 +21,20 @@ h2{
 }
 
 table {
-	background: #E0FF9E;
+	background: #E1F8FF;
 	border-collapse: collapse;
 	}
 	
 th {
 padding: 0 1em;
 max-width: 250px;
-border-bottom: 5px solid #64BB95;
+border-bottom: 5px solid #097BB0;
 }
 
 td {
 padding: 0 1em;
 max-width: 250px;	
-border-bottom: 1px solid #64BB95;
+border-bottom: 1px solid #097BB0;
 }
 
 th {
