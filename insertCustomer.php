@@ -37,8 +37,7 @@
 
 $sql="INSERT INTO the_user (Name, Address, Delivery_address, Email, Phone, Client_status, Admin_status, Password, DOB)
 VALUES
-('$_POST[Name]','$_POST[Address]','$_POST[Delivery_address]','$_POST[Email]','$_POST[Phone]','$_POST[1]
-','$_POST[0]','$_POST[Password]','$_POST[DOB]')";
+('$_POST[Name]', '$_POST[Address]', '$_POST[Delivery_address]', '$_POST[Email]', '$_POST[Phone]', '$_POST[1]', '$_POST[0]', '$_POST[Password]', '$_POST[DOB]')";
 
 	if (!mysqli_query($con,$sql))		
 	{
