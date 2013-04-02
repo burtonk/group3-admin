@@ -55,9 +55,7 @@
 							  echo "<td>" . $row['Min_Level'] . "</td>";
 							  echo "<td>" . $row['Active'] . "</td>";/*
 							  echo "<td>
-								<form action='insertProduct.php' method='post'>
-								<input type='submit' value='Reinstate product'>
-								</form></td>"*/
+								</td>"*/
 							  echo "</tr>";
 							  }
 							echo "</table>";
@@ -65,7 +63,9 @@
 							mysqli_close($con);
 							?>
 					
-			
+			<form action='insertProduct.php' method='post'>
+								<input type='submit' value='Reinstate product'>
+								</form>
 
 		</div>
 	</div>
