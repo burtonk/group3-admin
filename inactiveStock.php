@@ -82,7 +82,7 @@
 							  echo "<td>" . $row['Min_Level'] . "</td>";
 							  echo "<td>" . $row['Active'] . "</td>";
 							  echo "<td>
-					  <form action='insertProduct.php' method ='post'><input type = 'submit' value ='Reinstate product'></form>
+					  <form action='insertProduct.php' method ='post'><input type = 'submit' value ='Reinstate'></form>
 					  </td>";
 							  echo "</tr>";
 							  }
