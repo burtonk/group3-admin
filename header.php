@@ -29,16 +29,11 @@
 		<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>
 		
 		
-		<form>
-		<input type ="button" value="log out" onClick="a href='logout.php'">log out</form>
+		
+		<form action="logout.php" method="post">
+			<input name="return" type="hidden" value="<?php echo urlencode($_SERVER["PHP_SELF"]);?>" />
+			<input type="submit" value="logout" />
 		</form>
-	
-	
-	<form action="logout.php" method="post">
-    <input name="return" type="hidden" value="<?php echo urlencode($_SERVER["PHP_SELF"]);?>" />
-    <input type="submit" value="logout" />
-
-	</form>
 	
 	</div>	
 </div>
