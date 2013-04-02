@@ -46,12 +46,12 @@
 							  echo "<td>" . $row['Phone'] . "</td>";
 							  
 							  echo "<td>" 							  
-							  /*if($row['Client_status'] ==1){
+							  if($row['Client_status'] ==1){
 								echo "client";
 							  }
 							  else{
 								echo "admin";
-							  }					*/		  
+							  }					
 							  echo "</td>";
 							  
 							  echo "<td>" . $row['Admin_status'] . "</td>";
@@ -65,7 +65,7 @@
 							<br>
 							<br>
 							<button onclick="location.href='addCustomer.php'">Add Customer</button>
-							<button onclick="location.href='insertAdmin.php'">Add Admin</button>
+							<!--<button onclick="location.href='insertAdmin.php'">Add Admin</button>*/-->
 
 		</div>
 	</div>
