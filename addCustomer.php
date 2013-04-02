@@ -45,8 +45,6 @@
 			<li>Delivery Address: <input type="text" name="Delivery_address"></li>
 			<li>Email: <input type="text" name="Email"></li>
 			<li>Phone: <input type="text" name="Phone"></li>
-			<li>Client Status: <input type="text" name="Client_status"></li>
-			<li>Admin Status: <input type="text" name="Admin_status"></li>
 			<li>Password: <input type="text" name="Password"></li>
 			<li>Date of Birth: <input type="text" name="DOB"></li>
 			<br>
