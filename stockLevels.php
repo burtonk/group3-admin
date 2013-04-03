@@ -69,11 +69,12 @@
 					  echo "<td>" . $row['Weight'] . "</td>";
 					  echo "<td>" . $row['Stock_Level'] . "</td>";
 					  echo "<td>" . $row['Min_Level'] . "</td>";
-					  
-					  echo "<td> <form action='updateStock.php' method='post'>
-									<input type='text' name='Stock_Level'>
-									<input type='submit' value='Save'></form></td>";
-					  echo "</tr>";
+					  ?>
+					  <td> <form action='updateStock.php' method='post'>
+					  <input type='text' name='Stock_Level'>
+					  <input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
+					  <input type='submit' value='Save'></form></td>";
+					  </tr><?php
 					}
 					echo "</table>";
 				

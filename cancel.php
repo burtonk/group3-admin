@@ -55,4 +55,6 @@
 	echo "Mail Sent to ".$to;
 
 	mysqli_close($con);
+	
+	header("Location: currentOrders.php");
 ?>

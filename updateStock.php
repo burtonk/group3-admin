@@ -27,19 +27,19 @@
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 
 	// Check connection
-		if (mysqli_connect_errno($con))
-		{
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
-
-	if(isset($_POST['save']){
-							$edit=$row['text'];
-						}$sql="UPDATE product SET Stock_Level=$edit";
-
-	if (!mysqli_query($con,$sql))		
+	if (mysqli_connect_errno($con))
 	{
-	die('Error: ' . mysqli_error());
+	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
+
+	$edit=$_POST['Stock_Level'];	
+	$id=$_POST['productID'];	
+	$sql="UPDATE product SET Stock_Level=$_POST['Stock_Level'] WHERE P_Id=$_POST['productID']";
+
+	if (!mysqli_query($con,$sql)){
+		die('Error: ' . mysqli_error());
+	}
+	
 	echo "1 record added";
 
 	mysqli_close($con);
