@@ -84,6 +84,20 @@
 					  echo "<td>". $progress['Name'] . "</td>";
 					  echo"<td>";
 						
+						
+						?>
+					  
+						<form action="emailCustomer.php" method="post">
+						<input type="submit" name="update" value="Update">
+						<!-- needs order no. of THIS row... -->
+						<input type="submit" name="counter" value="mycounter">
+						</form>
+						
+						<?php
+						
+						
+						
+						
 						echo "</td>";						
 						
 					  /*
