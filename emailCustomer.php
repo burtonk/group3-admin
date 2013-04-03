@@ -25,7 +25,7 @@
 
 	  
 	// Create connection	
-	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
+/*	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 	
 	// Check connection
 		if (mysqli_connect_errno($con)){
@@ -64,6 +64,6 @@ $message = "Dear Customer, Your order is currently at the stage of " . $progress
 $headers = "From: gradinata@gmail.com";
 mail($to,$subject,$message,$headers);
 echo "Mail Sent to ".$to;
-*/
-mysqli_close($con);
+*
+mysqli_close($con);*/
 ?>
