@@ -28,52 +28,36 @@
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 	
 	// Check connection
-		if (mysqli_connect_errno($con)){
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
-
-		$id=$_POST['order'];
-		echo "In emailCustomer!";
-		echo "order id is ".$id;
-		
-	//reselect order
-		
-		//increase progress level of order (update Progress in original of row)
-
-		/*$orderNo=$row['OrderID'];
-						$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
-						$items=mysqli_fetch_array($itemTable);					 */
-		
-		
-$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
-$order=mysqli_fetch_array($orderTable);
-
-$increase=$order['Progress']+1;
-echo "new progress: " . $increase;
-echo "order ID: " . $order['OrderID'];
-
-
-$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
-
-if (!mysqli_query($con,$sql))		
-	{
-	die('Error: ' . mysqli_error());
+	if (mysqli_connect_errno($con)){
+	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
-	echo "Progress updated";
 
+	$id=$_POST['order'];	
 
-/*get new word - reset progress*/
+	//reselect order
+	$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
+	$order=mysqli_fetch_array($orderTable);
+
+	$increase=$order['Progress']+1;
+	$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
+	if (!mysqli_query($con,$sql)){
+		die('Error: ' . mysqli_error());
+	}
+	else{
+		echo "Progress updated";
+	}
+
+	/*get new word*/
 	$progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$increase");
 	$progress= mysqli_fetch_array($progTable);	
-	echo $progress['Name'];
 
-/*send email*
-$to = $row['email'];
-$subject = "Current Order Tracking ";
-$message = "Dear Customer, Your order is currently at the stage of " . $progress['Name'];
-$headers = "From: gradinata@gmail.com";
-mail($to,$subject,$message,$headers);
-echo "Mail Sent to ".$to;
-*/
-mysqli_close($con);
+	/*send email*/
+	$to = $row['email'];
+	$subject = "Current Order Tracking ";
+	$message = "Dear Customer, Your order is currently at the stage of " . $progress['Name'];
+	$headers = "From: gradinata@gmail.com";
+	mail($to,$subject,$message,$headers);
+	echo "Mail Sent to ".$to;
+
+	mysqli_close($con);
 ?>
