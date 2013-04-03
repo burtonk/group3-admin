@@ -79,20 +79,21 @@
 						  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 						  $progress= mysqli_fetch_array($progTable);					 
 					  echo "<td>". $progress['Name'] . "</td>";
-					  
+					  echo"<td>";
 
 					  
-						if (isset($_POST['update'])) {
+						if (isset($_POST['update'])&&($row['OrderID']==$selectUpdate)) {
 							echo "button press for order ".$row['OrderID'];
 						}
 						else{?>
-							<td>
-							<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+							<form action="<?php echo $selectUpdate=$row['OrderID']; echo $_SERVER['PHP_SELF']; ?>" method="post">
 							<input type="submit" name="update" value="Update">
 							</form>
-							</td>
 							<?php
 						}
+						
+						echo "</td>";						
+						
 					  /*
 						if(isset($_POST['Update']){
 							$increase=$row['Progress']+1;
