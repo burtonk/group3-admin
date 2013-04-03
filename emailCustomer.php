@@ -52,7 +52,7 @@ $increase=$order['Progress']+1;
 echo "new progress: " . $increase;
 echo "order ID: " . $order['OrderID'];
 
-/*
+
 $sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
 
 if (!mysqli_query($con,$sql))		

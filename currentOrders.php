@@ -90,30 +90,7 @@
 						</form>
 						
 						<?php
-					  echo "</td>";						
-						
-					  /*
-						if(isset($_POST['Update']){
-							$increase=$row['Progress']+1;
-							$id=$row['OrderID'];
-						}$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
-
-						if (!mysqli_query($con,$sql)){
-							die('Error: ' . mysqli_error());
-						}
-
-						echo "new progress: " . $increase;
-						echo "order ID: " . $id;
-					  }
-					  
-					  else {?>
-						<td>
-						<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method ='post'>
-						<input type = 'submit' value ='Update'>
-						</form>";
-						<?php
-					  }
-					  */
+					  echo "</td>";
 					  
 					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
 					  
