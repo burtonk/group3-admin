@@ -86,10 +86,11 @@
 							echo "button press for order ".$row['OrderID'];
 						}
 						else{?>
-							<form action=	"<?php $selectUpdate=$row['OrderID'];
-												echo 'selectUpdate='.$selectUpdate;
-												echo $_SERVER['PHP_SELF']; ?>"
-												method="post">
+							<form action=	"<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+							<?php 
+							$selectUpdate=$row['OrderID'];
+							echo 'selectUpdate='.$selectUpdate;
+							?>
 							<input type="submit" name="update" value="Update">
 							</form>
 							<?php
