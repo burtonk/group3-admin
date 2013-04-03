@@ -32,7 +32,7 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-	$sql="INSERT INTO product (Stock_Level)
+	$sql="UPDATE product (Stock_Level)
 	VALUES
 	('$_POST[Stock_Level]')";
 
