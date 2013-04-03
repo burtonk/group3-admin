@@ -23,6 +23,27 @@
 		header("Location: login.php");
 	  }
 
+	  
+	  // Create connection	
+	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
+	
+	// Check connection
+	if (mysqli_connect_errno($con)){
+	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	}
+
+	/*$id=$_POST['order'];	
+
+	//reselect order
+	$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
+	$order=mysqli_fetch_array($orderTable);
+
+	$sql="UPDATE the_order SET Progress=5 WHERE OrderID=$id";
+	if (!mysqli_query($con,$sql)){
+		die('Error: ' . mysqli_error());
+	}
+	  
+	  /*
 	// Create connection
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 
@@ -40,7 +61,7 @@
 		die('Error: ' . mysqli_error());
 	}
 	
-	echo "1 record added";
+	echo "1 record added";/
 
 	mysqli_close($con);
 ?>

@@ -73,7 +73,7 @@
 					  <td> <form action='updateStock.php' method='post'>
 					  <input type='text' name='Stock_Level'>
 					  <input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
-					  <input type='submit' value='Save'></form></td>";
+					  <input type='submit' value='Save'></form></td>
 					  </tr><?php
 					}
 					echo "</table>";
