@@ -65,7 +65,7 @@ if (!mysqli_query($con,$sql))
 /*get new word - reset progress*/
 	$progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$increase");
 	$progress= mysqli_fetch_array($progTable);	
-	echo $progress['name'];
+	echo $progress['Name'];
 
 /*send email*
 $to = $row['email'];
