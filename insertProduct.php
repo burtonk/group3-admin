@@ -46,5 +46,5 @@ VALUES
 
 	mysqli_close($con);
 	
-	//header("Location: productCatalogue.php");
+	header("Location: productCatalogue.php");
 ?>
