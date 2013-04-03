@@ -23,7 +23,7 @@
 		header("Location: login.php");
 	  }
 
-	  /*
+	  
 	// Create connection	
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 	
