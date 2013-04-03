@@ -58,7 +58,6 @@
 							<th>Product ID</th>
 							<th>Price</th>
 							<th>Description</th>
-							<th>Picture</th>
 							<th>Weight</th>
 							<th>Native Name</th>
 							<th>Stock Level</th>
@@ -75,7 +74,6 @@
 							  echo "<td>" . $row['P_Id'] . "</td>";
 							  echo "<td>" . $row['Price'] . "</td>";
 							  echo "<td>" . $row['Description'] . "</td>";
-							  echo "<td>" . $row['Img_location'] . "</td>";
 							  echo "<td>" . $row['Weight'] . "</td>";
 							  echo "<td>" . $row['S_Name'] . "</td>";
 							  echo "<td>" . $row['Stock_Level'] . "</td>";

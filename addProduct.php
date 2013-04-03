@@ -45,7 +45,6 @@
 			<li>Product I.D: <input type="text" name="P_Id"></li>
 			<li>Price: <input type="text" name="Price"></li>
 			<li>Product Description: <input type="text" name="Description"></li>
-			<li>Picture: <input type="text" name="Img_location"></li>
 			<li>Weight: <input type="text" name="Weight"></li>
 			<li>Native Name: <input type="text" name="S_Name"></li>
 			<li>Stock Level: <input type="text" name="Stock_Level"></li>
