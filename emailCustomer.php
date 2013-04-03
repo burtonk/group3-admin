@@ -33,6 +33,7 @@
 		}
 
 		echo "in emailCustomer!";
+		echo "counter is ".$_POST['counter'];
 /*increase progress level of order (update Progress in original of row)*
 $one=1;
 $increase=$row['Progress']+$one;

@@ -59,8 +59,11 @@
 					<th>Progress</th>
 					<th>Update</th>
 					</tr>";
-					while($row = mysqli_fetch_array($result))
-					  {
+					
+					$counter=0;
+					
+					while($row = mysqli_fetch_array($result)){
+					  $counter+=1;
 					  echo "<tr>";
 					  echo "<td>" . $row['Email'] . "</td>";
 					  echo "<td>" . $row['OrderID'] . "</td>";					 
@@ -79,21 +82,15 @@
 						  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 						  $progress= mysqli_fetch_array($progTable);					 
 					  echo "<td>". $progress['Name'] . "</td>";
-					  echo"<td>";
-
+					  echo"<td>";?>
 					  
-						if (isset($_POST['update'])&&($row['OrderID']==$selectUpdate)) {
-							echo 'selectUpdate='.$selectUpdate;
-							echo "button press for order ".$row['OrderID'];
-						}
-						else{?>
-							<form action=	"<?php $selectUpdate=$row['OrderID']; echo $_SERVER['PHP_SELF'];?>" method="post">
-							<?php 
-							
-							?>
-							<input type="submit" name="update" value="Update">
-							</form>
-							<?php
+						<form action="emailCustomer.php" method="post">
+						<!-- needs order no. of THIS row... -->
+						<input type="submit" name="update" value="Update">
+						<input type="submit" name="counter" value="<?php$counter?>">
+						</form>
+						
+						<?php
 						}
 						
 						echo "</td>";						
