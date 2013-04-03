@@ -32,8 +32,9 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
+		$id=$_POST['order'];
 		echo "In emailCustomer!";
-		echo "order id is ".$_POST['order'];
+		echo "order id is ".$id;
 		
 	//reselect order
 		
@@ -44,11 +45,10 @@
 						$items=mysqli_fetch_array($itemTable);					 */
 		
 		
-$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$_POST['order']");
+$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
 $order=mysql_fetch_array($orderTable);
 
 $increase=$order['Progress']+1;
-
 echo "new progress: " . $increase;
 echo "order ID: " . $order['OrderID'];
 
