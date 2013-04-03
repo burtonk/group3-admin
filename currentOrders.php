@@ -89,7 +89,7 @@
 					  
 						<form action="emailCustomer.php" method="post">
 						<!-- needs order no. of THIS row... -->
-						<input type="hidden" name="counter" value="<?php echo $counter?>">						
+						<input type="hidden" name="counter" value="<?php echo $row['OrderID']?>">						
 						<input type="submit" name="update" value="Update">						
 						</form>
 						
