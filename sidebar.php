@@ -29,9 +29,9 @@
 		<ul>
 		<a href="home.php"><li><b>Home</b></li></a>
 			<li>Manage orders<ul>
-				<a href="currentOrders.php" class = "side"><li>Orders being processed</li></a>
-				<a href="accountDetails.php" class = "side"><li>Customer account details</li></a>
+				<a href="currentOrders.php" class = "side"><li>Current Orders</li></a>				
 				<a href="pastOrders.php" class = "side"><li>Past orders</li></a>
+				<a href="accountDetails.php" class = "side"><li>Customer accounts</li></a>
 				<a href="reviews.php" class = "side"><li>Customer Reviews</li></a>			
 		</ul>
 		</li>

@@ -55,7 +55,7 @@
 							echo "<table border='1'>
 							<tr>
 							<th>Name</th>
-							<th>Product I.D</th>
+							<th>Product ID</th>
 							<th>Price</th>
 							<th>Product Description</th>
 							<th>Picture</th>

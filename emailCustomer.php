@@ -33,7 +33,8 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-/*increase progress level of order (update Progress in original of row)*/
+		echo "in emailCustomer!";
+/*increase progress level of order (update Progress in original of row)*
 $one=1;
 $increase=$row['Progress']+$one;
 $id=$row['OrderID'];
