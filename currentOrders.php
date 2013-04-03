@@ -85,9 +85,10 @@
 					  echo"<td>";?>
 					  
 						<form action="emailCustomer.php" method="post">
-						<!-- needs order no. of THIS row... -->
 						<input type="submit" name="update" value="Update">
-						<input type="submit" name="counter" value="<?php$counter?>">
+						<!-- needs order no. of THIS row... 
+						
+						<input type="submit" name="counter" value="<php$counter?>">-->
 						</form>
 						
 						<?php
