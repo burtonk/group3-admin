@@ -62,6 +62,7 @@
 							<th>Native Name</th>
 							<th>Stock Level</th>
 							<th>Minimum Level</th>
+							<th>Retire</th>
 
 							</tr>";
 							while($row = mysqli_fetch_array($result))
@@ -76,6 +77,13 @@
 							  echo "<td>" . $row['Stock_Level'] . "</td>";
 							  echo "<td>" . $row['Min_Level'] . "</td>";
 
+							  ?>
+							  
+								<td> <form action='deactivate.php' method='post'>
+								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
+								<input type='submit' value='Deactivate'></form></td>
+								</tr><?php
+							  
 							  echo "</tr>";
 							  }
 							echo "</table>";
