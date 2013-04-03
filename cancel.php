@@ -47,7 +47,7 @@
 	}
 
 	/*send email*/
-	$to = $order['email'];
+	$to = $order['Email'];
 	$subject = "Current Order Tracking ";
 	$message = "Dear Customer, Your order has been cancelled. We apologise for any inconvenience.";
 	$headers = "From: gradinata@gmail.com";

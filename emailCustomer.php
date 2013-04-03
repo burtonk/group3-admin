@@ -52,7 +52,7 @@
 	$progress= mysqli_fetch_array($progTable);	
 
 	/*send email*/
-	$to = $order['email'];
+	$to = $order['Email'];
 	$subject = "Current Order Tracking ";
 	$message = "Dear Customer, Your order is currently at the stage of " . $progress['Name'];
 	$headers = "From: gradinata@gmail.com";
