@@ -97,8 +97,6 @@
 						<?php
 					  echo "</td>";
 					  
-					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
-					  
 					  echo "</td>";
 					  echo "</tr>";
 					  }
@@ -109,11 +107,6 @@
 					<br>
 					<br>
 					<br>
-					<!--<form action="emailCustomer.php" method="post">
-						Customer to email: <input type="text" name="Email">
-						Progress: <input type="text" name="Progress">
-						<input type="submit" value="Send email">
-					</form>-->
 		</div>
 	</div>
 
