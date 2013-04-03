@@ -62,7 +62,6 @@
 							<th>Native Name</th>
 							<th>Stock Level</th>
 							<th>Minimum Level</th>
-							<th>Activity</th>
 							<th>Restore</th>
 
 
@@ -78,11 +77,13 @@
 							  echo "<td>" . $row['S_Name'] . "</td>";
 							  echo "<td>" . $row['Stock_Level'] . "</td>";
 							  echo "<td>" . $row['Min_Level'] . "</td>";
-							  echo "<td>" . $row['Active'] . "</td>";
-							  echo "<td>
-					  <form action='insertProduct.php' method ='post'><input type = 'submit' value ='Reinstate'></form>
-					  </td>";
-							  echo "</tr>";
+							  ?>
+							  
+								<td> <form action='activate.php' method='post'>
+								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
+								<input type='submit' value='Reactivate'></form></td>
+								</tr><?php
+								
 							  }
 							echo "</table>";
 
