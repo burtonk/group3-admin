@@ -22,18 +22,35 @@
 	 else {
 		header("Location: login.php");
 	  }
-	?>
 
-<?php
+	  
+	// Create connection	
+	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
+	
+	// Check connection
+		if (mysqli_connect_errno($con))
+		{
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+
 /*increase progress level of order (update Progress in original of row)*/
 $increase=$row['Progress']+1;
 $id=$row['OrderID'];
-mysqli_query($con, "UPDATE the_order SET Progress=$increase WHERE OrderID=$id");
+
+$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
+
+if (!mysqli_query($con,$sql))		
+	{
+	die('Error: ' . mysqli_error());
+	}
+	echo "Progress updated";
+
 
 /*get new word - reset progress*/
 $progNo=$row['Progress'];
 $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 $progress= mysqli_fetch_array($progTable);	
+
 
 /*send email*/
 $to = $row['email'];
@@ -42,4 +59,6 @@ $message = "Dear Customer, Your order is currently at the stage of " . $progress
 $headers = "From: gradinata@gmail.com";
 mail($to,$subject,$message,$headers);
 echo "Mail Sent.";
+
+mysqli_close($con);
 ?>
