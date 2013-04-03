@@ -82,10 +82,10 @@
 					  
 
 					  
-					 /* if(isset($_POST('Update')){
+					  if(isset($_POST('Update')){
 						$increase=$row['Progress']+1;
 						$id=$row['OrderID'];
-						$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
+						}/*$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
 
 						if (!mysqli_query($con,$sql)){
 							die('Error: ' . mysqli_error());
