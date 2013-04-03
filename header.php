@@ -30,12 +30,10 @@
 	<div id="header">
 		<a href="home.php"><img src="logo.gif" alt = "Gradinata Admin" color="white" class = "head-pic"></a>		
 		
-		<div style="float:right">
 		<form action="logout.php" method="post">
 			<input name="return" type="hidden" value="<?php echo urlencode($_SERVER["PHP_SELF"]);?>" />
 			<input type="submit" value="log out" />
-		</form>
-		</div>
+		</form>		
 		
 	</div>	
 </div>
