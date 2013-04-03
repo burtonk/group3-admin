@@ -67,7 +67,7 @@
 		die('Error: ' . mysqli_error());
 	}
 	
-	echo "1 record added";/
+	echo "1 record added";*/
 
 	mysqli_close($con);
 ?>
