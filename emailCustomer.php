@@ -32,15 +32,26 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-		echo "in emailCustomer!";
-		echo "counter is ".$_POST['counter'];
-/*increase progress level of order (update Progress in original of row)*
-$one=1;
-$increase=$row['Progress']+$one;
-$id=$row['OrderID'];
+		echo "In emailCustomer!";
+		echo "order id is ".$_POST['order'];
+		
+	//reselect order
+		
+		//increase progress level of order (update Progress in original of row)
+
+		/*$orderNo=$row['OrderID'];
+						$itemTable=mysqli_query($con, "SELECT * FROM order_item WHERE Order_Id=$orderNo");
+						$items=mysqli_fetch_array($itemTable);					 */
+		
+		
+$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$_POST['order']");
+$order=mysql_fetch_array($orderTable);
+
+$increase=$order['Progress']+1;
 
 echo "new progress: " . $increase;
-echo "order ID: " . $id;
+echo "order ID: " . $order['OrderID'];
+
 /*
 $sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
 

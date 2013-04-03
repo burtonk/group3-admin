@@ -82,23 +82,15 @@
 						  $progTable=mysqli_query($con,"SELECT * FROM progress_options WHERE Progress_Id=$progNo");
 						  $progress= mysqli_fetch_array($progTable);					 
 					  echo "<td>". $progress['Name'] . "</td>";
-					  echo"<td>";
-						
-						
-						?>
+					  echo"<td>";?>
 					  
 						<form action="emailCustomer.php" method="post">
-						<!-- needs order no. of THIS row... -->
-						<input type="hidden" name="counter" value="<?php echo $row['OrderID']?>">						
+						<input type="hidden" name="order" value="<?php echo $row['OrderID']?>">						
 						<input type="submit" name="update" value="Update">						
 						</form>
 						
 						<?php
-						
-						
-						
-						
-						echo "</td>";						
+					  echo "</td>";						
 						
 					  /*
 						if(isset($_POST['Update']){
