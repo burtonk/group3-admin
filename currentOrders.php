@@ -95,11 +95,12 @@
 						echo "order ID: " . $id;
 					  }
 					  */
-					  else {
-						echo"<td>
-						<form action='emailCustomer.php' method ='post'>
+					  else {?>
+						<td>
+						<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method ='post'>
 						<input type = 'submit' value ='Update'>
 						</form>";
+						<?php
 					  }
 					  
 					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
