@@ -28,8 +28,7 @@
 	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
 	
 	// Check connection
-		if (mysqli_connect_errno($con))
-		{
+		if (mysqli_connect_errno($con)){
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 

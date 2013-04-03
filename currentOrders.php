@@ -82,7 +82,7 @@
 					  
 
 					  
-					  if(isset($_POST('Update')){
+					 /* if(isset($_POST('Update')){
 						$increase=$row['Progress']+1;
 						$id=$row['OrderID'];
 						$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
@@ -95,12 +95,12 @@
 						echo "order ID: " . $id;
 					  }
 					  
-					  else {?>
-						<td>
+					  else {?>*/
+						echo"<td>
 						<form action='emailCustomer.php' method ='post'>
 						<input type = 'submit' value ='Update'>
 						</form>";						
-						<?php
+						/*<?php
 					  }
 					  
 					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
