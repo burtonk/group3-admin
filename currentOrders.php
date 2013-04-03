@@ -89,6 +89,11 @@
 						<input type="submit" name="update" value="Update">						
 						</form>
 						
+						<form action="cancel.php" method="post">
+						<input type="hidden" name="order" value="<?php echo $row['OrderID']?>">						
+						<input type="submit" name="update" value="Cancel">						
+						</form>
+						
 						<?php
 					  echo "</td>";
 					  
