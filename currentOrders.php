@@ -94,13 +94,12 @@
 						echo "new progress: " . $increase;
 						echo "order ID: " . $id;
 					  }
-					  
-					  else {?>*/
+					  */
+					  else {
 						echo"<td>
 						<form action='emailCustomer.php' method ='post'>
 						<input type = 'submit' value ='Update'>
-						</form>";						
-						/*<?php
+						</form>";												
 					  }
 					  
 					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
