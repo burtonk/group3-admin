@@ -42,32 +42,10 @@
 		die('Error: ' . mysqli_error());
 	}
 	else{
-		echo "query success!!!";
+		echo "query success";
 	}
-	
-	/*$id=$_POST['order'];	
-
-	//reselect order
-	$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
-	$order=mysqli_fetch_array($orderTable);
-
-	$sql="UPDATE the_order SET Progress=5 WHERE OrderID=$id";
-	if (!mysqli_query($con,$sql)){
-		die('Error: ' . mysqli_error());
-	}
-	  
-	  /*
-	// Create connection
-	
-	$edit=$_POST['Stock_Level'];	
-	$id=$_POST['productID'];	
-	$sql="UPDATE product SET Stock_Level=$_POST['Stock_Level'] WHERE P_Id=$_POST['productID']";
-
-	if (!mysqli_query($con,$sql)){
-		die('Error: ' . mysqli_error());
-	}
-	
-	echo "1 record added";*/
 
 	mysqli_close($con);
+	
+	header("Location: stockLevels.php");
 ?>
