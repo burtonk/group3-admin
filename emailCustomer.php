@@ -45,7 +45,7 @@
 						$items=mysqli_fetch_array($itemTable);					 */
 		
 		
-$orderTable=mysqli_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
+$orderTable=mysql_query($con, "SELECT * FROM the_order WHERE OrderID=$id");
 $order=mysql_fetch_array($orderTable);
 
 $increase=$order['Progress']+1;
