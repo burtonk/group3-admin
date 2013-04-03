@@ -38,8 +38,8 @@ $one=1;
 $increase=$row['Progress']+$one;
 $id=$row['OrderID'];
 
-echo $increase;
-echo $id;
+echo "new progress: " . $increase;
+echo "order ID: " . $id;
 /*
 $sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
 
