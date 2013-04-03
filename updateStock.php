@@ -32,9 +32,9 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-	$sql="UPDATE product (Stock_Level)
-	VALUES
-	('$_POST[Stock_Level]')";
+	if(isset($_POST['save']){
+							$edit=$row['text'];
+						}$sql="UPDATE product SET Stock_Level=$edit";
 
 	if (!mysqli_query($con,$sql))		
 	{
