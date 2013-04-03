@@ -34,6 +34,10 @@
 
 	$edit=$_POST['Stock_Level'];	
 	$id=$_POST['productID'];	
+	echo $edit;
+	echo $id;
+	
+	$sql="UPDATE product SET Stock_Level=$edit WHERE P_Id=$id";
 	
 	/*$id=$_POST['order'];	
 
