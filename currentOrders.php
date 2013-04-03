@@ -82,9 +82,9 @@
 					  
 
 					  
-					  if(isset($_POST('Update')){
-						$increase=$row['Progress']+1;
-						$id=$row['OrderID'];
+						if(isset($_POST['Update']){
+							$increase=$row['Progress']+1;
+							$id=$row['OrderID'];
 						}/*$sql="UPDATE the_order SET Progress=$increase WHERE OrderID=$id";
 
 						if (!mysqli_query($con,$sql)){
@@ -99,7 +99,7 @@
 						echo"<td>
 						<form action='emailCustomer.php' method ='post'>
 						<input type = 'submit' value ='Update'>
-						</form>";												
+						</form>";
 					  }
 					  
 					  /*echo "<form action='cancel.php' method ='post'><input type = 'submit' value ='Cancel'></form>"*/
