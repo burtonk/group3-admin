@@ -62,7 +62,7 @@
 							<th>Native Name</th>
 							<th>Stock Level</th>
 							<th>Minimum Level</th>
-							<th>Restore</th>
+							<th>Restore/Remove</th>
 
 
 							</tr>";
@@ -81,9 +81,9 @@
 							  
 								<td> <form action='activate.php' method='post'>
 								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
-								<input type='submit' value='Reactivate'></form></td>
+								<input type='submit' value='Reactivate'></form>
 								
-								<td> <form action='deleteProduct.php' method='post'>
+								<form action='deleteProduct.php' method='post'>
 								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
 								<input type='submit' value='Delete'></form></td>
 								</tr>
