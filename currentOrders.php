@@ -83,11 +83,15 @@
 
 					  
 						if (isset($_POST['update'])) {
+							echo "button press for order ".$row['OrderID'];
 						}
 						else{?>
+							<td>
 							<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 							<input type="submit" name="update" value="Update">
-							</form><?php
+							</form>
+							</td>
+							<?php
 						}
 					  /*
 						if(isset($_POST['Update']){
