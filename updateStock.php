@@ -34,10 +34,16 @@
 
 	$edit=$_POST['Stock_Level'];	
 	$id=$_POST['productID'];	
-	echo $edit;
-	echo $id;
+	echo $edit.'<br>';
+	echo $id.'<br>';
 	
 	$sql="UPDATE product SET Stock_Level=$edit WHERE P_Id=$id";
+	if (!mysqli_query($con,$sql)){
+		die('Error: ' . mysqli_error());
+	}
+	else{
+		echo "query success!!!";
+	}
 	
 	/*$id=$_POST['order'];	
 
