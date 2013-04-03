@@ -45,7 +45,7 @@
 
 	mysqli_close($con);
 	
-	//header("Location: productCatalogue.php");
+	header("Location: inactiveStock.php");
 
 ?>
 
