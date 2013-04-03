@@ -89,6 +89,7 @@
 					  
 						<form action="emailCustomer.php" method="post">
 						<!-- needs order no. of THIS row... -->
+						<input type="hidden" name="counter" value="<?php$counter?>">						
 						<input type="submit" name="update" value="Update">						
 						</form>
 						
