@@ -32,6 +32,9 @@
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
+	$edit=$_POST['Stock_Level'];	
+	$id=$_POST['productID'];	
+	
 	/*$id=$_POST['order'];	
 
 	//reselect order
@@ -45,14 +48,7 @@
 	  
 	  /*
 	// Create connection
-	$con=mysqli_connect("k.tfa.ie","disney","kandy", "website");
-
-	// Check connection
-	if (mysqli_connect_errno($con))
-	{
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-
+	
 	$edit=$_POST['Stock_Level'];	
 	$id=$_POST['productID'];	
 	$sql="UPDATE product SET Stock_Level=$_POST['Stock_Level'] WHERE P_Id=$_POST['productID']";
