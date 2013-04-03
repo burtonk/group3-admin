@@ -50,7 +50,7 @@
 						  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 						}
 
-							$result = mysqli_query($con,"SELECT * FROM product");
+							$result = mysqli_query($con,"SELECT * FROM product WHERE Active=1");
 
 							echo "<table border='1'>
 							<tr>

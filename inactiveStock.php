@@ -82,7 +82,14 @@
 								<td> <form action='activate.php' method='post'>
 								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
 								<input type='submit' value='Reactivate'></form></td>
-								</tr><?php
+								</tr>
+								
+								<td> <form action='deleteProduct.php' method='post'>
+								<input type="hidden" name="productID" value="<?php echo $row['P_Id']?>">						
+								<input type='submit' value='Delete'></form></td>
+								</tr>
+								
+								<?php
 								
 							  }
 							echo "</table>";
