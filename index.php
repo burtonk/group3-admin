@@ -2,5 +2,5 @@
 <html>
 <head>
 <title>Gradinata Admin</title>
-<meta http-equiv="REFRESH" content="0;url=group3-admin/home.php"></HEAD>
+<meta http-equiv="REFRESH" content="0;url=k.tfa.ie/admin/home.php"></HEAD>
 </html>
